@@ -7,7 +7,6 @@ class Solution {
             if (nums[i]<pivot)
                ans[in++]=nums[i];
         }
-            
         for (int i = 0; i < n; i++) {
             if (nums[i] == pivot) 
                 ans[in++] = nums[i];
