@@ -1,4 +1,3 @@
-/*import java.util.HashMap;*/
 class Solution {
     public boolean checkIfPangram(String sentence) {
         HashMap<Character, Integer> map = new HashMap<>();
