@@ -6,7 +6,6 @@ class Solution {
        for(int i=0;i<nums.length;i++){
           sum+=nums[i];
           int res = sum%k;
-       
        if(mp.containsKey(res)){
         if(i-mp.get(res)>=2)
         return true;
