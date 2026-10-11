@@ -1,17 +1,23 @@
 class Solution {
-    public void swap(int i,int j,int[] nums){
-        int temp = nums[i];
-        nums[i] = nums[j];
-        nums[j] =temp;
-    }
+    
     public int findDuplicate(int[] arr) {
-        
-        
+        int slow =0;
+        int fast = 0;
         while(true){
-            int ele = arr[0];
-            if(arr[ele]==ele) return ele;
-            swap(0,ele,arr);
+            slow = arr[slow];
+            fast = arr[fast];
+            fast = arr[fast];
+            if(slow==fast){
+                slow=0;
+                while(slow!=fast){
+                    slow= arr[slow];
+                    fast = arr[fast];               
+                }
+                return slow;
+            
         }
-        
+       
+        }
+      
     }
 }
